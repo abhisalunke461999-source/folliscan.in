@@ -1,13 +1,115 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folliscan | Hair & Scalp Analysis</title>
+    <style>
+        :root {
+            --primary: #27ae60;
+            --accent: #2ecc71;
+            --dark: #2c3e50;
+            --light: #ecf0f1;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f4f7f6;
+            color: var(--dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        nav {
+            width: 100%;
+            background: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .container {
+            max-width: 600px;
+            width: 90%;
+            margin-top: 50px;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin: 0;
+        }
+        .status-badge {
+            display: inline-block;
+            background: #e8f5e9;
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 20px;
+        }
+        .feature-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .feature {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 0.9rem;
+        }
+        .cta-button {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .cta-button:hover {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
 
+    <nav>
+        <p class="logo">Folliscan</p>
+    </nav>
+
+    <div class="container">
+        <span class="status-badge">● System Online</span>
+        <h1>Analyze Your Scalp Health</h1>
+        <p>AI-driven diagnostics and personalized nutrition to stop hair fall and promote growth.</p>
+
+        <div class="feature-box">
+            <div class="feature">🔬 <strong>AI Scan</strong><br>Scalp health analysis</div>
+            <div class="feature">🥗 <strong>Nutrition</strong><br>Protein-rich diet plans</div>
+            <div class="feature">📉 <strong>Tracking</strong><br>Density monitoring</div>
+            <div class="feature">💡 <strong>Advice</strong><br>Expert hair care tips</div>
+        </div>
+
+        <button class="cta-button" onclick="alert('Analysis Module Loading...')">Start Free Scan</button>
+    </div>
+
+    <footer>
+        &copy; 2026 Folliscan.in | Dedicated to Hair Wellness
+    </footer>
+
+</body>
+</html>
