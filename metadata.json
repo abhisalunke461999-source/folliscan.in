@@ -1,0 +1,6 @@
+{
+  "name": "FolliScan AI",
+  "description": "AI-powered scalp scanning and hair health restoration planning.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["AI Diagnostic Scanner", "Diet Nutrient Audit", "Personalized Treatment Plans"]
+}
